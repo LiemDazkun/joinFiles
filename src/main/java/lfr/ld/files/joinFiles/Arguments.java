@@ -2,6 +2,8 @@ package lfr.ld.files.joinFiles;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.List;
 import org.apache.log4j.Logger;
 import lfr.ld.files.joinFiles.exception.JoinFilesException;
 
@@ -18,6 +20,8 @@ public class Arguments {
   private Path origenPath;
   private Path destinoPath;
   private String password;
+  
+  private HashMap<String, List<String>> archivos = new HashMap<String, List<String>>();
 
   static {
     try {
@@ -119,6 +123,14 @@ public class Arguments {
 
   public void setPassword(String password) {
     this.password = password;
+  }
+
+  public HashMap<String, List<String>> getArchivos() {
+    return archivos;
+  }
+
+  public void setArchivos(HashMap<String, List<String>> archivos) {
+    this.archivos = archivos;
   }
 
 

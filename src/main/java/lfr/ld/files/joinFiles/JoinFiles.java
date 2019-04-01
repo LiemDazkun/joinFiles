@@ -24,11 +24,12 @@ public class JoinFiles {
   public static void main(String[] args) {
     BasicConfigurator.configure();
     logger.info("JoinFiles.main::INI");
-    HashMap<String, List<String>> archivos = new HashMap<String, List<String>>();
     try {
-        Arguments arg = Arguments.getInstance(args);
-        archivos = Archivos.readFiles();
+        Arguments.getInstance(args);
+        Arguments.getArguments().setArchivos(Archivos.readFiles());
+        Archivos.printHashMap(Arguments.getArguments().getArchivos());
     } catch (Exception e) {
+      e.printStackTrace();
       logger.fatal(e);
     }
     logger.info("JoinFiles.main::FIN");
