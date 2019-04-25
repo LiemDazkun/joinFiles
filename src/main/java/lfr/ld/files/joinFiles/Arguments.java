@@ -27,7 +27,7 @@ public class Arguments {
     try {
       arguments = new Arguments();
     } catch (Exception e) {
-      logger.error("Error al cargar la conexion con A2iA", e);
+      logger.error("Error al cargar las rutas. ", e);
     }
   }
 
