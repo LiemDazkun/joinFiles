@@ -11,7 +11,7 @@
 
 	<properties>
 		<!-- Versions -->
-		<log4j.version>1.2.17</log4j.version>
+		<log4j.version>2.13.0</log4j.version>
 
 		<!-- Directories -->
 		<resources.dir>src/main/resources</resources.dir>
@@ -22,9 +22,9 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>${log4j.version}</version>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-core</artifactId>
+		    <version>${log4j.version}</version>
 		</dependency>
 	</dependencies>
 
