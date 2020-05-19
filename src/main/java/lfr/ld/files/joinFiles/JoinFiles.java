@@ -1,9 +1,8 @@
 package lfr.ld.files.joinFiles;
 
-import java.util.HashMap;
-import java.util.List;
-import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import lfr.ld.files.joinFiles.utils.Archivos;
 
 /**
@@ -12,7 +11,7 @@ import lfr.ld.files.joinFiles.utils.Archivos;
  */
 public class JoinFiles {
 
-  private static Logger logger = Logger.getLogger(JoinFiles.class);
+  private static Logger logger = LogManager.getLogger(JoinFiles.class);
 
   /**
    * java -jar JoinFiles -i 
@@ -22,7 +21,6 @@ public class JoinFiles {
    * @param args
    */
   public static void main(String[] args) {
-    BasicConfigurator.configure();
     logger.info("JoinFiles.main::INI");
     try {
         Arguments.getInstance(args);

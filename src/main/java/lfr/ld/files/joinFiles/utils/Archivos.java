@@ -12,12 +12,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import lfr.ld.files.joinFiles.Arguments;
 
 public class Archivos {
 
-  private static Logger logger = Logger.getLogger(Archivos.class);
+  private static Logger logger = LogManager.getLogger(Archivos.class);
 
   public static HashMap<String, List<String>> readFiles() {
     HashMap<String, List<String>> ficheros = new HashMap<String, List<String>>();

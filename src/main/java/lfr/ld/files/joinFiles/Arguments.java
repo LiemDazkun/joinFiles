@@ -4,12 +4,15 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.List;
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import lfr.ld.files.joinFiles.exception.JoinFilesException;
 
 public class Arguments {
 
-  private static Logger logger = Logger.getLogger(JoinFiles.class);
+  private static Logger logger = LogManager.getLogger(JoinFiles.class);
   private static Arguments arguments = null;
 
   private static final String ORIGEN = "-o";
