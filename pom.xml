@@ -12,7 +12,7 @@
 	<properties>
 		<!-- Versions -->
 		<java.version>1.8</java.version>
-		<log4j.version>2.13.3</log4j.version>
+		<log4j.version>2.17.0</log4j.version>
 
 		<!-- Directories -->
 		<resources.dir>src/main/resources</resources.dir>
